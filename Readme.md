@@ -106,3 +106,21 @@ This area is intended for overrides like these:
 Such overrides, while automatically required, will only be included if their target
 class ("Ext.foo.Bar" in this case) is also required. This simplifies applying
 patches or extensions to other classes.
+
+## How to set up
+
+You need install several prerequisites:
+* JDK
+* Sencha Command
+* node.js (with npm)
+
+Then take the following procedures under the root directory of the project:
+
+```bash
+# install npm dependencies
+$ npm install
+# install ext
+$ ./node_modules/.bin/grunt init
+# use sencha command to start your application
+$ $SENCHA_CMD_DIR/sencha app watch
+```

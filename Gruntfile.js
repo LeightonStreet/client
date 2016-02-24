@@ -84,7 +84,7 @@ var path = require('path'),
                     src: ['build/**']
                 },
                 ext_cache: {
-                    src: ['bower_components/extjs6/**']
+                    src: ['bower_components/extjs/**']
                 },
                 dependencies: {
                     src: ['node_modules/**', 'bower_components/**', 'ext/**']
@@ -96,7 +96,7 @@ var path = require('path'),
                 ext: {
                     files: [
                         // includes files within path and its sub-directories
-                        {expand: true, cwd: 'bower_components/extjs6/', src: ['**'], dest: 'ext/'}
+                        {expand: true, cwd: 'bower_components/extjs/', src: ['**'], dest: 'ext/', dot: true}
                     ]
                 }
             }
@@ -106,7 +106,6 @@ var path = require('path'),
         grunt.initConfig(cfg);
 
         // # Custom Tasks
-
 
         // ### Lint
         //
@@ -127,7 +126,7 @@ var path = require('path'),
         // `bower` does have some quirks, such as not running as root. If you have problems please try running
         // `grunt init --verbose` to see if there are any errors.
         grunt.registerTask('init', 'Prepare the project for development',
-            ['shell:bower', 'copy:ext', 'clean:cache']);
+            ['shell:bower', 'copy:ext', 'clean:ext_cache']);
     };
 
 module.exports = configureGrunt;

@@ -12,3 +12,5 @@ build/
 bootstrap.*
 classic.json
 modern.json
+
+npm-debug.log

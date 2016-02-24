@@ -20,6 +20,6 @@
     "tests"
   ],
   "dependencies": {
-    "extjs6": "*"
+    "extjs": "6.0.0-640"
   }
 }
