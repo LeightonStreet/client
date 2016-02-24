@@ -1,0 +1,25 @@
+{
+  "name": "tweet-client",
+  "description": "Tweetmap client written in Ext JS 6",
+  "main": "app.js",
+  "moduleType": [],
+  "keywords": [
+    "tweet",
+    "map"
+  ],
+  "authors": [
+    "Haoxiang Xu"
+  ],
+  "license": "GPL",
+  "homepage": "https://github.com/LeightonStreet/client.git",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "extjs6": "*"
+  }
+}

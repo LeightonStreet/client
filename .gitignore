@@ -1,0 +1,14 @@
+# IDE and system
+.DS_Store
+.idea/
+
+# dependencies
+ext/
+bower_components/
+node_modules/
+
+# built cache
+build/
+bootstrap.*
+classic.json
+modern.json
